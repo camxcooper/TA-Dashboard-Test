@@ -589,7 +589,7 @@ const App = (() => {
           <div class="req-row priority-${r.priority}" onclick="App.openReqDetail('${r.id}')">
             <span class="req-col-id req-id-text">${r.id}</span>
             <span class="req-col-title req-title-text">${r.title}</span>
-            <span class="req-col-team"><span class="team-chip team-${r.team.toLowerCase().replace(/[^a-z]/g,'")}">${r.team}</span></span>
+            <span class="req-col-team"><span class="team-chip team-${r.team.toLowerCase().replace(/[^a-z]/g,'')}">${r.team}</span></span>
             <span class="req-col-level"><span class="level-chip level-${r.level.toLowerCase()}">${r.level}</span></span>
             <span class="req-col-recruiter">${r.recruiter}</span>
             <span class="req-col-age ${r.openDays > 40 ? 'age-danger' : r.openDays > 20 ? 'age-warning' : ''}">${r.openDays}d</span>
