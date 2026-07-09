@@ -59,7 +59,7 @@ const Charts = (() => {
   function funnel(container, stages) {
     const W = 620, H = 340;
     const padL = 130, padR = 170;
-    const barH = 34, gap = 10;
+    const barH = 24, gap = 7;
     const maxW = W - padL - padR;
     const minW = maxW * 0.12;
     const svg = makeSVG(W, H);
