@@ -130,7 +130,10 @@ const Charts = (() => {
 
     const totalH = stages.length * (barH + gap) - gap;
     svg.setAttribute("viewBox", `0 0 ${W} ${totalH}`);
+    svg.setAttribute("width", W);
     svg.setAttribute("height", totalH);
+    svg.style.maxWidth = "100%";
+    svg.style.display = "block";
     container.innerHTML = "";
     container.appendChild(svg);
   }
